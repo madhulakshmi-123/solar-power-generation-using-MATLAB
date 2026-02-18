@@ -1,88 +1,27 @@
-# solar-power-generation-using-MATLAB
-MATLAB/Simulink model of a residential solar power system with PV array, MPPT-based DC–DC boost converter, and single-phase inverter. The system converts solar energy into regulated AC power for household loads and analyzes performance under varying irradiance and temperature conditions.
-☀️ Solar Power Generation System for Homes using MATLAB/Simulink
+☀️ Solar Power Generation System for Residential Homes using MATLAB
 📌 Project Overview
 
-This project presents the modeling and simulation of a residential solar power generation system using MATLAB/Simulink (Simscape Electrical).
+This project presents the design and simulation of a solar power generation system for residential applications using MATLAB/Simulink. The model analyzes the performance of a photovoltaic (PV) system under varying environmental conditions and evaluates its suitability for household energy requirements.
 
-The system converts solar energy into usable AC power for household loads through a DC–DC boost converter with MPPT control and a DC–AC inverter stage.
-
-The model analyzes system performance under varying irradiance (Ir) and temperature (T) conditions.
-
+The objective is to demonstrate efficient solar energy conversion, optimize power output, and study system behavior under different irradiance and temperature conditions.
 ⚙️ System Architecture
 
-The Simulink model consists of:
+The simulated system consists of:
 
-PV Array
+PV Array – Converts solar energy into DC power
 
-Inputs: Solar Irradiance (Ir), Temperature (T)
+MPPT Controller – Extracts maximum power from the PV panel
 
-Outputs: DC voltage and current
+DC–DC Boost Converter – Steps up PV voltage
 
-MPPT Controller
+DC Link Capacitor – Stabilizes DC output
 
-Extracts maximum power from the PV panel
+Single-Phase Inverter – Converts DC to AC
 
-Generates PWM pulses for switching control
+LC Filter – Reduces harmonics
 
-DC–DC Boost Converter
-
-Increases PV voltage to required DC link level
-
-Includes inductor, diode, capacitor, and controlled switch
-
-DC Link Capacitor
-
-Stabilizes boosted DC voltage
-
-Single-Phase Inverter
-
-Converts DC to AC
-
-Controlled using gate pulses
-
-LC Output Filter
-
-Reduces harmonic distortion
-
-Produces smooth AC waveform
-
-Residential Load
-
-Modeled as R load
-
-Voltage and current measurement blocks included
-
-📊 Simulation Parameters
-
-Irradiance: 1500 W/m² (adjustable)
-
-Temperature: 25°C
-
-Continuous simulation mode
-
-Voltage and power measurement scopes included
-
-🎯 Key Features
-
-✔ PV array modeling with environmental inputs
-✔ MPPT-based maximum power extraction
-✔ Boost converter voltage regulation
-✔ DC–AC conversion using inverter
-✔ Output waveform monitoring
-✔ Suitable for standalone home applications
-
-📈 Results
-
-Boost converter increases DC voltage efficiently
-
-MPPT improves solar power utilization
-
-Inverter produces AC output suitable for household appliances
-
-Output voltage and current waveforms verified using scope
-
-🛠 Tools Used
+Residential Load – Modeled as R load
+Tools Used
 
 MATLAB
 
@@ -92,22 +31,47 @@ Simscape Electrical
 
 Power Electronics Blocks
 
+📊 Simulation Details
+
+Variable Irradiance and Temperature inputs
+
+Voltage, current, and power measurement blocks
+
+PWM-based switching control
+
+Continuous simulation mode
+📈 Output Results
+
+The simulation results include:
+
+PV voltage and current waveforms
+
+Boost converter output voltage
+
+DC link voltage
+
+Inverter AC output waveform
+
+Power analysis graphs
+
+The results demonstrate efficient voltage boosting, improved power extraction using MPPT, and stable AC output suitable for residential loads.
+
 🚀 Applications
 
 Residential rooftop solar systems
 
+Standalone solar power systems
+
 Academic renewable energy projects
 
-Power electronics simulation studies
+Power electronics learning and research
 
-Solar inverter design learning
-
-🔮 Future Improvements
+🔮 Future Enhancements
 
 Battery Energy Storage System integration
 
-Grid-connected mode implementation
+Grid-connected operation
 
-Advanced MPPT (Incremental Conductance / Fuzzy Logic)
+Advanced MPPT algorithms
 
 THD analysis of inverter output
